@@ -19,7 +19,8 @@ Our first model simply took the  training data set of ~85% of the ~1800 images i
 ### Nearest Neighbors Models
 Before jumping right into neura nets (as used by all of the top scorers), we decided to try a simplistic ML approach of using nearest neighbors regression, using both k-NR and r-NR methods. We used a Grid Search to tune hyperparameters in each case. With the k-NR methodology and a k-value of 5, we were able to achieve an RMSE of ~2.5 on our development set which is a significant improvement over the baseline methodology with ample room for improvement.
 
-
+### Single Layer Neural Nets
+From the universal approximation theorem, we believe that a single layer neural network can represent any function sufficiently well. Thus, we begin our foray into neural net regression for the Facial Keypoint Detection analysis through experimentation and evaluation of several different single layer neural network models. We evaluate various optimizers, activation functions, and training rates. 
 
 
 
