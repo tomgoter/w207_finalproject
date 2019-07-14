@@ -35,3 +35,4 @@ Before jumping right into neura nets (as used by all of the top scorers), we dec
  - Convolutional neural network tutorial - http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/
  - Free GPU usage on Google Colab - https://hackernoon.com/begin-your-deep-learning-project-for-free-free-gpu-processing-free-storage-free-easy-upload-b4dba18abebc
  - Stanford Deep Learning Tutorial - http://deeplearning.stanford.edu/tutorial/
+ - Discussion of CNN Architectures - https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
