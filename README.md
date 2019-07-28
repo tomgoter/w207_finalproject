@@ -89,5 +89,3 @@ The accuracies of the specialized models were then inspected and ranked and focu
 14. right_eye_inner_corner     1.10
 15. left_eye_inner_corner      1.05
 
-
-![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/LR_Sense_16SF.png "Learning Rate Sensitivity")
