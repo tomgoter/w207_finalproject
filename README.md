@@ -8,6 +8,13 @@ Repository for Final Project for Applied Machine Learning
 ### Facial Keypoint Detection
 Link - https://www.kaggle.com/c/facial-keypoints-detection/overview
 
+### Navigation of Files
+There are several Jupyter Notebook files provided in this GitHub repository that have been used for various aspects of this project. This section discusses the purpose of each file.
+
+- **DataExploration.ipynb** - This file was used to explore and clean the training data. This file was also used to create serialized dataframes of the training images. These serialized dataframes were then read in as input to other notebooks for actual model training. The only model building included in this notebook is the "mean model" and the nearest neighbors models which are used as baselines.
+- **tf_notebook_tpg.ipynb** - This notebook was used to start to build single and double layer neural nets. It was mostly used for learning how to use Keras and TensorFlow for constructing neural networks. This was also used to run a suite of sensitivity studies to begin to build user understanding of different hyperparameters.
+
+
 #### Problem Abstract
 
 The goal of our models are to detect facial keypoint locations on input images that are 96 by 96 pixels. In order to do this detection, the modelers choose to evaluate various Convolutional Neural Networks (CNNs) with various architectures, input transformation and hyperparameter settings. These explorations and evaluations result in a final model that is used to evaluate a fixed set of test data that has not been trained on or investigated whatsoever. Through this process the modelers develop a deeper understanding of machine learning (ML), ML applications, deep learning, data preprocessing, hyperparamter tuning and model optimization.
