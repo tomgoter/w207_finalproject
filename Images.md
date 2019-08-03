@@ -8,4 +8,5 @@
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/flipped_performance.png?raw=true "Flipped Image - Performance")
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/vgg_performance_V2.png?raw=true "VGG vs Alex")
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/dropout_spec.png?raw=true "Dropout Sensitivity")
-
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/wdropout.png?raw=true "Dropout Schematic")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/wodropout.png?raw=true "No Dropout Schematic")
