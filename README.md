@@ -81,7 +81,7 @@ The AlexNet results both in terms of efficiency and accuracy led the modelers to
 
 But of course the downside must also be discussed.
 
-The specialized models will increase our model training time by at least a factor of 15. In addition to this, if the modelers are to tune each model, the amount of hands-on time is greatly increased. This is not an insignificant challenge to overcome. The modelers tried to balance this downside by first running all 15 models, starting with the combined model weights and hyperparameters. This method by itself resulted in very significant improvements in generalization of the model. The predictions from this model were evaluated against the Kaggle test set and determined to have an RMSE of 2.18 - an improvement of ~0.7 from the combined AlexNet model!
+The specialized models will increase our model training time by at least a factor of 15. In addition to this, if the modelers are to tune each model, the amount of hands-on time is greatly increased. This is not an insignificant challenge to overcome. The modelers tried to balance this downside by first running all 15 models, starting with the combined model weights and hyperparameters. This method by itself resulted in very significant improvements in generalization of the model. The predictions from this model were evaluated against the Kaggle test set and determined to have an RMSE of 2.18 (public kaggle score) - an improvement of ~0.7 from the combined AlexNet model!
 
 The accuracies of the specialized models were then inspected and ranked and focused effort was placed on improving the worst performing models, as shown below. This ranking allowed the modelers to determine which keypoints to prioritize. From the list below, it appears that significant benefit could come just from improving the predictions of the first two keypoints (i.e., mouth_center_bottom_lip and nose_tip).
 
@@ -101,3 +101,17 @@ The accuracies of the specialized models were then inspected and ranked and focu
 14. right_eye_inner_corner     1.10
 15. left_eye_inner_corner      1.05
 
+**Improved Specialist Models**
+
+The process of improving just the two worst specialist models was quite time consuming. The team found that increasing the number of layers and the starting filter depth led to improved results, but in order to reduce overfitting this needed to be coupled with increased dropout rate. The original specialist models implemented a dropout strategy in which the first layer had no dropout, but after every additional layer an additional 10% dropout was added. This strategy was useful in reducing overfitting for the AlexNet which was training to predict all 15 keypoints. For our improved specialist models, our dropout rate strategy was modified to start at 20% and ramping to 65% after the fourth layer. Additionally, in order to reduce the overall number of parameters to train, the improved specialist models for the nose_tip and mouth_center_bottom_lip made use of only 200 hidden units in the fully connected layers. After optimization, the final specialized models for the nose_tip and mouth_center_bottom_lip had a little over a million parameters in each model, relative to ~3.2 in the original specialist models.
+
+Using this method we were able to reduce our validation RMSE scores for our worst two keypoints (i.e., mouth_center_bottom_lip and nose_tip).  The resulting validation scores for our improved models were:
+
+1.   mouth_center_bottom_lip 2.90  -->  **2.54**
+2.   nose_tip  2.65 --> **2.41**
+
+With improving only our two worst performing specialist models, we scored against our test set and showed public/private Kaggle scores of 2.09/1.71. In fact the private score was good enough to knock us into 9th place on the private leaderboard.  Not bad!
+
+#### Conclusions
+
+Our final project consisted of learning how to build, train and improve a convolutional neural network in order to learn to predict the location of facial keypoints such as the tips of noses and the centers of eyes. We compared CNN performance against two baseline models (mean model and KNN) and showed vastly superior performance. This superior performance did not come for free, and did require significant CPU/GPU training time and user time to determine how to optimize hyperparameters such as filter depth, dropout rate, and dense layer size. This project was very effective and providing our team with a empirical framework from which to build on our fundamental understanding of simple neural networks and extend that into the deep learning architecture space.
