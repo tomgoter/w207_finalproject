@@ -19,7 +19,7 @@ There are several Jupyter Notebook files provided in this GitHub repository that
 - **architecture.ipynb** - This notebook, created in the Google Colaboratory environment, is used to experiment with different CNN architectures. It is set up to run with a linked Google Drive account from which the training data is read and to which results are saved (not included in this GitHub repo). Architectures shown in this notebook inclues GoogleNet, ResNet, and MobileNet. Results are submitted to Kaggle for scoring so they can be compared with other models from other notebooks. 
 - *submission_notebook.ipynb* - This notebook is used to reload the representative models from various studies, generate predictions on the Kaggle test data, and write a submission file.
 - *BokehApp* - This directory contains a Python script and supporting files for running a BokehApp. The app can be run with the following command `bokeh serve --show BokehApp/` from the root directory of this Repository. The application is used to visulize the results of many of the sensitivities in an interactive manner. This was not considered to be essential to the project, but the team used this final project to also expand their visualization capabilities using Python.
-
+- **basic_cnn_example_ctw.ipynb** - This notebook, created in Google Colaboratory envorinment, is a basic demonstration of a cnn containing a single convolution. The notebook demonstrates the simplicity of the tensorflow/keras implementation process, and provides a simple rendering of the convolved images to aid in understanding the purpose of deep convolutions.
 
 #### Problem Abstract
 
