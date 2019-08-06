@@ -11,3 +11,8 @@
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/wdropout.png?raw=true "Dropout Schematic")
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/wodropout.png?raw=true "No Dropout Schematic")
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_1_res_3conv_module.png?raw=true "1-Res 3-Conv Module")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_mobile_linear_module.png?raw=true "MobileNet")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_2_inception_3conv_module.png?raw=true "Inception 2-module 3-conv Module")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_residual_module.png?raw=true "Residual Module")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_single_inception_module.png?raw=true "Single Inception Module")
+
