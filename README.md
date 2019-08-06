@@ -128,3 +128,7 @@ With improving only our two worst performing specialist models, we scored agains
 #### Conclusions
 
 Our final project consisted of learning how to build, train and improve a convolutional neural network in order to learn to predict the location of facial keypoints such as the tips of noses and the centers of eyes. We compared CNN performance against two baseline models (mean model and KNN) and showed vastly superior performance. This superior performance did not come for free, and did require significant CPU/GPU training time and user time to determine how to optimize hyperparameters such as filter depth, dropout rate, and dense layer size. This project was very effective and providing our team with a empirical framework from which to build on our fundamental understanding of simple neural networks and extend that into the deep learning architecture space.
+
+#### Acknowledgements
+
+The author of this notebook would like to acknowledge the [extremely helpful blog](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/) post of Daniel Nuori on using convolutional neural nets for this regression problem. It provided an extremely helpful framework from which to explore and perform many sensitivities which allowed the author to develop a better understanding of CNNs.
