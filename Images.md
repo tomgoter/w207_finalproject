@@ -16,3 +16,12 @@
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_residual_module.png?raw=true "Residual Module")
 ![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/arc_single_inception_module.png?raw=true "Single Inception Module")
 
+
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/model_plot.png?raw=true "Multiple Convolution Model Plot")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/conv_img4x2.png?raw=true "Convolution images1")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/conv_img_2row.png?raw=true "Convolution images2")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/conv_img_1row.png?raw=true "Convolution images3")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/deeper_cnn_plot.png?raw=true "Deeper CNN Model plot")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/simple_cnn_pred.png?raw=true "Simple CNN Predictions")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/pred_img.png?raw=true "Deeper CNN Predictions")
+![image](https://github.com/tomgoter/w207_finalproject/blob/master/Images/simple_cnn_plot.png?raw=true "Simple CNN Model Plot")
